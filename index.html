@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="cloudy.png">
+</head>
+<body bgcolor="#f9fafb"> 
+    <header>
+        <div class="leftHeaderElem">
+            <div class="location borderColor cardBackground"><span class="chooseLocation">Choose Location ▼</span></div>
+            <div class="switchTheme borderColor cardBackground hoverColor" id="switchTheme">🌙</div>
+        </div>
+        <div class="rightHeaderElem">
+            <div class="login borderColor cardBackground hoverColor"><a href="login.html">Login</a></div>
+        </div>
+    </header>
+    <h1>
+        CHOOSE YOUR LOCATION
+    </h1>
+    <div class="weatherCard borderColor cardBackground">
+        <div class="cardTop">
+            <div class="weatherIcon">⛈️</div>
+            <div class="cardTopRight">
+                <div class="switchUnit borderColor cardBackground hoverColor">F</div>
+                <div class="weatherName primaryText">Thunderstorm</div>
+                <div class="location-card">in Patna</div>
+            </div>
+        </div>
+        <div class="cardBottom">
+            <div class="botTop">
+                <div class="elem borderColor cardBackground">
+                    <span class="icon cardBackground">🌡️</span>
+                    <span class="value primaryText" id="temperature">38°C</span>
+                </div>
+            <div class="elem borderColor cardBackground">
+                    <span class="icon cardBackground">🔺</span>
+                    <span class="value primaryText" id="temperatureMax">40°C</span>
+            </div>
+            <div class="elem borderColor cardBackground">
+                <span class="icon cardBackground">🔻</span>
+                <span class="value primaryText" id="temperatureMin">35°C</span>
+            </div>
+        </div>
+        <div class="botBot">
+            <div class="elem borderColor cardBackground">
+                <span class="icon cardBackground">💦</span>
+                <span class="value primaryText" id="humidity">60%</span>
+            </div>
+            <div class="elem borderColor cardBackground">
+                <span class="icon cardBackground">💨</span>
+                <span class="value primaryText" id="windSpeed">15 kmph</span>
+            </div>
+            <div class="elem borderColor cardBackground">
+                <span class="icon cardBackground">⏰</span>
+                <span class="value primaryText" id="time"></span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

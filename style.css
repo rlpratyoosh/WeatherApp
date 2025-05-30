@@ -1,0 +1,336 @@
+:root {
+    --text-color: #4b5563;
+}
+
+* {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: clamp(1rem, 2vw, 1.10rem);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Header ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.leftHeaderElem, .rightHeaderElem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.switchTheme, .login {
+    border: 3px solid #e5e7eb; 
+    height: fit-content;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background-color: white; 
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.login a{
+    text-decoration: none;;
+}
+
+.login a:visited{
+    text-decoration: none;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    max-width: fit-content;
+    border: 3px solid #e5e7eb; 
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    background-color: white; 
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.location .elem{
+    font-size: 17px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    margin-top: 20px;
+}
+
+.locationTextField{
+    padding: 5px;
+    border: 2px solid #e5e7eb;
+    border-radius: 15px;
+    margin: 10px auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.saveButton{
+    background-color: rgb(207, 250, 142);
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.switchTheme:hover, .login:hover, .switchUnit:hover {
+    background-color: #e4e6e9;
+}
+
+.location .elem:hover{
+    background-color: #e4e6e9;
+}
+
+.location:active, .switchTheme:active, .login:active, .switchUnit:active {
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Body ===== */
+
+h1 {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #3B82F6;
+    margin-top: 20%;
+}
+
+/* ===== Weather Card ===== */
+.weatherCard{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(300px, 90%, 700px);
+    margin: 5% auto;
+    margin-top: 10%;
+    padding: 2rem;
+    background-color: white;
+    border: 3px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cardTop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherIcon {
+    font-size: clamp(100px, 20vw, 200px);
+    text-align: center;
+}
+
+.cardTopRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.switchUnit {
+    border: 3px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 0.3rem 0.8rem;
+    background-color: white;
+    align-self: flex-end;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.weatherName {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #1f2937;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.location-card {
+    color: #6b7280;
+}
+
+/* ===== Weather Details ===== */
+.cardBottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.botTop, .botBot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    border: 3px solid #e5e7eb;
+    border-radius: 20px;
+    background-color: #f9fafb;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 0.5rem 1.2rem;
+    text-align: center;
+}
+
+.elem .icon {
+    background-color: #e5e7eb;
+    color: #f9fafb;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.elem .value {
+    color: #111827;
+    font-weight: 600;
+}
+
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+
+    .switchUnit {
+        align-self: center;
+    }
+
+    .weatherCard {
+        margin-top: 40%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .leftHeaderElem, .rightHeaderElem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .weatherName {
+        font-size: 2rem;
+    }
+
+    .weatherIcon {
+        font-size: 120px;
+    }
+
+    .weatherCard{
+        margin-top: 50%;
+    }
+
+    .elem {
+        font-size: 1rem;
+    }
+}
+
+
+/* Login Page */
+
+.loginCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(300px, 90%, 700px);
+    margin: 5% auto;
+    margin-top: 10%;
+    padding: 2rem;
+    gap: 1.2rem;
+    background-color: white;
+    border: 3px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.fields{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+}
+
+.fields .inputField {
+    flex: 2;
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.fields .label {
+    flex: 1;
+    font-size: 1.8rem;
+    width: 100px;
+    margin-left: 4%;
+}
+
+.fields .submitButton {
+    background-color: rgb(207, 250, 142);
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    border: 3px solid #e5e7eb;
+    margin-top: 3%;
+    margin-left: 40%;
+    cursor: pointer;
+    font-size: 1.4rem;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.submitButton:hover {
+    background-color: #d1fae5;
+}
+
+.submitButton:active {
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 480px){
+    .loginCard{
+        margin-top: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    .fields {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fields .label{
+        text-align: center;
+    }
+    .fields .submitButton{
+        margin-left: 10%;
+    }
+}
