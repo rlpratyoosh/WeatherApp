@@ -11,9 +11,9 @@ A simple and clean weather forecast app built using HTML, CSS, and JavaScript. G
 
 | Home Page | Login Page |
 |----------|------------|
-| ![Home]()) | ![Login]() |
-
-> *(Replace the image paths above with real screenshots if you want to show them)*
+| ![Home](![image](https://github.com/user-attachments/assets/1ba65a04-ae07-48d8-9632-80c1c09a4ade)
+)) | ![Login](![image](https://github.com/user-attachments/assets/b8986091-0cac-4b87-ad87-cb85489d0ab3)
+) |
 
 ---
 
