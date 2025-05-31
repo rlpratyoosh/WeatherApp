@@ -130,6 +130,7 @@ function chooseLocation(callback) {
         locationElem.textContent = location;
         locationElem.addEventListener("click", () => {
           currentLocation = location;
+          fetchWeatherData(currentLocation, showWeatherCard, updateLocation);
           showWeatherCard();
           updateLocation();
           closeDropDown();
@@ -178,9 +179,7 @@ function addLocation() {
         if (locationName) {
           locationList.push(locationName);
           currentLocation = locationName;
-          if (currentLocation) {
-            fetchWeatherData(currentLocation, showWeatherCard, updateLocation);
-          }
+          fetchWeatherData(currentLocation, showWeatherCard, updateLocation);
           closeDropDown();
           textField.remove();
           saveButton.remove();
