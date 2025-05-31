@@ -285,7 +285,7 @@ switchTheme.addEventListener("click", () => {
         element.style.backgroundColor = "#e4e6e9";
       });
       element.addEventListener("mouseout", () => {
-        element.style.backgroundColor = "#e4e6e9";
+        element.style.backgroundColor = "white";
       });
     });
 
