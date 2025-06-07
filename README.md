@@ -30,7 +30,7 @@ A simple and clean weather forecast app built using HTML, CSS, and JavaScript. G
 
 - HTML5  
 - CSS3  
-- JavaScript  
+- Typescript  
 - [OpenWeatherMap API](https://openweathermap.org/api)
 
 ---
