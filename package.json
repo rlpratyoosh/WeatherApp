@@ -1,0 +1,24 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "A simple and clean weather forecast app built using HTML, CSS, and JavaScript. Get real-time weather information of any city using the OpenWeatherMap API.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlpratyoosh/WeatherApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rlpratyoosh/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/rlpratyoosh/WeatherApp#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
